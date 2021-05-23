@@ -1,0 +1,365 @@
+/*Global css*/
+
+#widget-vent * {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#widget-vent {
+    border-radius: 5px;
+    height       : 0;
+    width        : 0;
+    overflow: hidden;
+    border: 3px solid #0553b2;
+}
+
+#widget-vent header {
+    background: #0553b2;
+    padding   : 15px 15px;
+    display   : block;
+    width     : 100%
+}
+
+#widget-vent .title-name {
+    display  : block;
+    width    : 100%;
+    color    : #ffffff;
+    font-size: 23px;
+    position : relative
+}
+
+#widget-vent .ref-btn {
+    display: flex;
+    position: absolute;
+    right   : 15px;
+    top     : 2px;
+}
+
+#widget-vent #refreshDone{
+    margin-right: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#widget-vent .ref-btn img {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+
+#widget-vent .ref-btn img:hover {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#widget-vent .statioin {
+    display:flex; 
+    justify-content: center;
+    background : #f0f0f0;
+    width      : 100%;
+    padding    : 15px 15px;
+    font-size  : 23px;
+    font-family: 'poppinslight';
+}
+
+#widget-vent .statioin span {
+    font-family: 'poppinsregular';
+}
+
+#widget-vent #stationName, .longitude, .latitude{
+    margin: 0 0.4em 0 0.4em;
+}
+
+#widget-vent .web-section {
+    display  : flex;
+    /* flex-wrap: wrap; */
+}
+
+#widget-vent .flex-block {
+    flex     : 0 0 50%;
+}
+
+#widget-vent .order-1 {
+    display: flex;
+    flex-direction: column;
+    /* padding  : 30px 0 50px 0; */
+}
+
+#widget-vent .order-2 {
+    /* padding  : 30px 0; */
+}
+
+#widget-vent .vitesses{
+    display: flex;
+    height: 0;
+    width: 0;
+}
+
+#widget-vent #lblVent{
+    line-height: 15px;
+    vertical-align: bottom;
+    margin: auto;
+}
+
+#widget-vent #lblRafales{
+    line-height: 15px;
+    vertical-align: bottom;
+    margin: auto;
+}
+
+#widget-vent .vent-sec,
+#widget-vent .refales-sec {
+    margin: auto;
+    display:flex;
+    justify-content: center; 
+    font-size     : 0px;
+    width         : auto;
+    color         : #0055b2;
+    font-family   : 'poppinslight';
+    background    : #ffffff;
+}
+
+#widget-vent .divVent{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+}
+
+#widget-vent .divRafales{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+}
+
+#widget-vent .vent-sec strong,
+#widget-vent .refales-sec strong {
+    width       : auto;
+    /* line-height : 60px; */
+    padding-right: 0.4em;
+    text-transform: uppercase;
+}
+
+
+#widget-vent .vent-sec .abc,
+#widget-vent .refales-sec .abc {
+    display:flex; 
+    justify-content: center;
+    width         : auto;
+    line-height: 50px;
+}
+
+#widget-vent .vent-sec .abc>span,
+#widget-vent .refales-sec .abc>span {
+    font-size  : 90px;
+    font-weight: bold
+}
+
+#widget-vent .refales-sec {
+    margin-top: 10%;
+}
+
+
+#widget-vent #vent{
+    font-size:0em; 
+    font-weight:bold;
+}
+
+#widget-vent #ventDec{
+    transform:translateY(12px)
+}
+
+#widget-vent #convertVent{
+    color:#666666; 
+    transform:translateY(12px); 
+    margin-left:5px
+}
+
+#widget-vent #rafales{
+    font-size:0em; 
+    font-weight:bold;
+}
+
+#widget-vent #rafalesDec{
+    transform:translateY(12px)
+}
+
+#widget-vent #convertRafales{
+    transform:translateY(12px); color:#666666; margin-left:5px
+}
+
+#widget-vent .btnUnits{
+    height: 20px;
+    padding: 0 5px 0 5px;
+    margin: auto;
+}
+
+#widget-vent .meter-cicle {
+    text-align: center;
+    padding   : 25px;
+    position  : relative
+}
+
+#widget-vent .dernier {
+    text-align : center;
+    display    : block;
+    padding-top: 0;
+    line-height: 33px;
+    font-size  : 18px;
+    color      : #666666
+}
+
+#widget-vent .dernier em {
+    text-transform: uppercase;
+    font-style    : normal;
+    color         : #666666;
+}
+
+#widget-vent .needle {
+    position  : absolute;
+    text-align: center;
+    top       : 50%;
+    left      : 50%;
+    transform : translateX(-50%)translateY(-50%);
+}
+
+#widget-vent .needle img {
+    transform: rotate(0deg);
+    width    : 70%;
+}
+
+#widget-vent .circle-img {
+    position  : relative;
+    display   : block;
+    margin    : auto;
+    text-align: center
+}
+
+#widget-vent .imgBorderBottom:after{
+    content: "";
+    background: #0553b2;
+    position: absolute;
+    bottom: 0;
+    left: 17.5%;
+    height: 3px;
+    width: 65%;
+}
+
+#widget-vent .m-cir img {
+    width: 70%;
+}
+
+#widget-vent .gray-circle-number {
+    display:flex; 
+    justify-content: center;
+    width     : 100%;
+    text-align: center;
+    color     : #ffffff;
+    font-size  : 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position   : absolute;
+    top        : 50%;
+    left       : 50%;
+    transform  : translateX(-45%) translateY(-60%);
+    width      : auto;
+}
+
+#widget-vent #rel{
+    display:flex; 
+    justify-content: center;
+}
+
+#widget-vent #dernierRel{
+    margin: 0 0.1em 0 0.2em;
+}
+
+#widget-vent #divTemperature{
+    display: flex;
+    justify-content: center;
+}
+
+#widget-vent #temperature, #widget-vent #horaire{
+    margin: 0 0 0 0.2em;
+}
+
+
+#widget-vent .radio-btn {
+    display:flex; 
+    justify-content: space-evenly;
+    margin-top: 10%;
+    width     : 100%;
+    transform: translateY(-1em);
+    z-index: 2;
+}
+
+#widget-vent .radio_box {
+    display       : flex;
+    justify-content: center;
+    font-size: 1.6em; 
+}
+
+
+#widget-vent input[type=radio] {
+    margin: auto;
+    transform: scale(2.2);
+}
+
+#widget-vent .radio_box label{
+    margin-left: 1rem;
+}
+
+
+
+#widget-vent .cordinate-metero {
+    font-size: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    border-top : solid 1px #e4e4e4;
+    width      : 100%;
+    color      : #666666;
+    background : #eeeeee;
+    padding: 1rem 0 1rem 0;
+}
+
+
+#widget-vent .gray-circle-number i {
+    font-size: 15px
+}
+
+#widget-vent .cordinate-metero span {
+    padding-top: 8px
+}
+
+
+#widget-vent .cordinate-metero ul li {
+    display: flex;
+    float     : left;
+    padding   : 0 10px;
+    list-style: none;
+    position  : relative
+}
+
+#widget-vent .cordinate-metero ul li:after {
+    content   : "";
+    position  : absolute;
+    background: #999;
+    width     : 1px;
+    height    : 20px;
+    right     : 0;
+    top       : 30%;
+}
+
+
+#widget-vent .cordinate-metero ul li:last-child:after {
+    background: none
+}
+
+#widget-vent .cordinate-metero a {
+    color: #666666
+}
